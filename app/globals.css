@@ -2,6 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply antialiased font-openSans;
+@layer components {
+  body {
+    @apply antialiased font-openSans text-text text-sm leading-[22px];
+  }
+  .container {
+    @apply mx-auto px-5;
+  }
+  .footer-title h4 {
+    @apply sm:mb-8;
+  }
+
+  .footer-plus-icon {
+    @apply sm:hidden;
+  }
+
+  @media (max-width: 640px) {
+    .footer-title {
+      @apply flex items-center mb-0 space-x-4;
+    }
+    .footer-content {
+      @apply max-h-0 transition-all duration-500 overflow-hidden;
+    }
+    .footer-menu-col input:checked ~ .footer-content {
+      @apply max-h-screen mt-4;
+    }
+  }
+
+  .footer-menu-col input:checked + label .active_minus {
+    @apply hidden;
+  }
 }

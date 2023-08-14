@@ -12,6 +12,15 @@ const config: Config = {
         openSans: ["var(--font-open-sans)"],
         jost: ["var(--font-jost)"],
       },
+      colors: {
+        primary: {
+          light: "#38ef7d",
+          DEFAULT: "#25c486",
+          dark: "#11998e",
+        },
+        title: "#222222",
+        text: "#777777",
+      },
     },
   },
   plugins: [],
