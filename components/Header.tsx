@@ -55,12 +55,12 @@ const Header = () => {
               About
             </Link>
             <Link
-              href="/services"
+              href="/products"
               className={`py-2 md:py-6 uppercase text-xl lg:text-sm ${
-                currentRoute === "/services" ? "text-primary" : ""
+                currentRoute === "/products" ? "text-primary" : ""
               }`}
             >
-              Services
+              Products
             </Link>
             <Link
               href="/portfolio"
@@ -85,6 +85,14 @@ const Header = () => {
               }`}
             >
               Contact
+            </Link>
+            <Link
+              href="/cart"
+              className={`py-2 md:py-6 uppercase text-xl lg:text-sm ${
+                currentRoute === "/cart" ? "text-primary" : ""
+              }`}
+            >
+              Cart
             </Link>
           </nav>
         </div>
